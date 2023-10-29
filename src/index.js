@@ -37,6 +37,7 @@ tabHeaders.appendChild(tabContainer);
 let currentTab = "Home";
 
 function renderHomeTab() {
+  tabContent.innerHTML = "";
   // Home Page Image
   const newImage = document.createElement("img");
   newImage.src = "/src/images/PizzaBackground.jpg";
