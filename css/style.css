@@ -1,4 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .15fr .15fr .1fr;
+    font-size: 16px !important;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding-top: 1rem;
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.tab-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.tab-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Create three columns for Home, Menu, and Contact */
+    grid-template-rows: repeat(1, 1fr);
+    /* Create one row for tab labels */
+}
+
+.tab {
+    text-align: center;
+}
+
 img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    /* Set the width to 100% to span all three columns */
+    height: 100%;
+    grid-row: 3 / span 1;
+    /* Place it in row 3 */
+    grid-column: 1 / span 3;
+    /* Span all 3 columns */
+}
+
+.tab-content {
+    grid-row: 3 / span 1;
+    /* Display tab content in rows 3 and 4 */
+    grid-column: 1 / span 3;
+    /* Span all 3 columns */
+    display: grid;
+    /* grid-template-rows: .15fr .15fr; */
+    /* Create two rows for content */
+
+}
+
+.footer-container {
+    padding-top: 1rem;
+    grid-row: 4;
+    grid-column: 1 / span 3;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr, fr);
 }
