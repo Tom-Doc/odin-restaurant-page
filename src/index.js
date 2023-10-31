@@ -8,9 +8,8 @@ titleHeader.classList.add("header");
 content.appendChild(titleHeader);
 
 //Tab Header
-//Website header
-const tabHeaders = document.createElement("header");
-tabHeaders.classList.add("header");
+const tabHeaders = document.createElement("div");
+tabHeaders.classList.add("tab-header");
 content.appendChild(tabHeaders);
 
 // Tab Content
@@ -109,3 +108,5 @@ function setupTabEventListeners() {
 
 // Call the function to set up the event listeners after creating the tabs
 setupTabEventListeners();
+// Call function so that Home tab always opens first
+renderHomeTab();
