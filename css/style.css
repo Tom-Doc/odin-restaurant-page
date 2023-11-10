@@ -117,7 +117,7 @@ img {
 .wine-item-six {
     text-align: center;
     padding-top: 2rem;
-    text-decoration: 2px underline;
+    /* text-decoration: 2px underline; */
 }
 
 .menu-item-one-text,
@@ -284,4 +284,190 @@ img {
 .wine-item-six-text {
     grid-row: 13;
     grid-column: 3;
+}
+
+
+@media (max-width: 768px) {
+    .tab-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .header {
+        padding-top: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .tab-header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        grid-row: 2;
+    }
+
+    .menu-pizza-image,
+    .menu-wine-image {
+        height: auto;
+        padding-top: 0.5rem;
+        /* Adjust padding as needed for spacing */
+        padding-bottom: 0.5rem;
+        /* Adjust padding as needed for spacing */
+    }
+
+    .menu-header {
+        text-align: center;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+
+    .menu-pizza-image {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .menu-item-one {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .menu-item-one-text {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    .menu-item-two {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    .menu-item-two-text {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    .menu-item-three {
+        grid-row: 7;
+        grid-column: 1;
+    }
+
+    .menu-item-three-text {
+        grid-row: 8;
+        grid-column: 1;
+    }
+
+    .menu-item-four {
+        grid-row: 9;
+        grid-column: 1;
+    }
+
+    .menu-item-four-text {
+        grid-row: 10;
+        grid-column: 1;
+    }
+
+    .menu-item-five {
+        grid-row: 11;
+        grid-column: 1;
+    }
+
+    .menu-item-five-text {
+        grid-row: 12;
+        grid-column: 1;
+    }
+
+    .menu-item-six {
+        grid-row: 13;
+        grid-column: 1;
+    }
+
+    .menu-item-six-text {
+        grid-row: 14;
+        grid-column: 1;
+    }
+
+    .menu-sub-header {
+        text-align: center;
+        grid-row: 15;
+        grid-column: 1;
+        padding-top: 10rem;
+    }
+
+    .menu-wine-image {
+        grid-row: 16;
+        grid-column: 1;
+    }
+
+    /* Wine List Headers */
+    .wine-item-one {
+        grid-row: 17;
+        grid-column: 1;
+    }
+
+    .wine-item-one-text {
+        grid-row: 19;
+        grid-column: 1;
+    }
+
+    .wine-item-two {
+        grid-row: 19;
+        grid-column: 1;
+    }
+
+    .wine-item-three {
+        grid-row: 21;
+        grid-column: 1;
+    }
+
+    .wine-item-four {
+        grid-row: 23;
+        grid-column: 1;
+    }
+
+    .wine-item-five {
+        grid-row: 25;
+        grid-column: 1;
+    }
+
+    .wine-item-six {
+        grid-row: 27;
+        grid-column: 1;
+    }
+
+    /* Wine List Text */
+    .wine-item-one-text {
+        grid-row: 18;
+        grid-column: 1;
+    }
+
+    .wine-item-two-text {
+        grid-row: 20;
+        grid-column: 1;
+    }
+
+    .wine-item-three-text {
+        grid-row: 22;
+        grid-column: 1;
+    }
+
+    .wine-item-four-text {
+        grid-row: 24;
+        grid-column: 1;
+    }
+
+    .wine-item-five-text {
+        grid-row: 26;
+        grid-column: 1;
+    }
+
+    .wine-item-six-text {
+        grid-row: 28;
+        grid-column: 1;
+    }
 }
