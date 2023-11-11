@@ -100,7 +100,7 @@ img {
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .menu-item-one,
@@ -116,7 +116,6 @@ img {
 .wine-item-five,
 .wine-item-six {
     text-align: center;
-    padding-top: 2rem;
     /* text-decoration: 2px underline; */
 }
 
@@ -215,7 +214,7 @@ img {
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -286,6 +285,71 @@ img {
     grid-column: 3;
 }
 
+/* Contact Us Tab */
+.contact-header {
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.contact-us-image {
+    grid-row: 2 / span 3;
+    width: 100%;
+    /* Set width to 100% to span the entire column */
+    height: 400px;
+    /* Auto height to maintain the aspect ratio */
+    object-fit: cover;
+    /* Scale the image to cover the entire container */
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* Contact Us Headers */
+.contact-us-location,
+.contact-us-hours,
+.contact-us-call {
+    text-align: center;
+}
+
+.contact-us-location {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.contact-us-hours {
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.contact-us-call {
+    grid-row: 5;
+    grid-column: 3;
+}
+
+/* Contact Us Sub Text Lines */
+.contact-us-sub-one,
+.contact-us-sub-two,
+.contact-us-sub-three {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-us-sub-one {
+    grid-row: 6;
+    grid-column: 1;
+}
+
+.contact-us-sub-two {
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.contact-us-sub-three {
+    grid-row: 6;
+    grid-column: 3;
+}
+
 
 @media (max-width: 768px) {
     .tab-container {
@@ -312,12 +376,33 @@ img {
     }
 
     .menu-pizza-image,
-    .menu-wine-image {
+    .menu-wine-image,
+    .contact-us-image {
         height: auto;
-        padding-top: 0.5rem;
+        /* width: 10%; */
+        /* padding-top: 0.5rem; */
         /* Adjust padding as needed for spacing */
-        padding-bottom: 0.5rem;
+        /* padding-bottom: 0.5rem; */
         /* Adjust padding as needed for spacing */
+    }
+
+    .menu-item-one-text,
+    .menu-item-two-text,
+    .menu-item-three-text,
+    .menu-item-four-text,
+    .menu-item-five-text,
+    .menu-item-six-text,
+    .wine-item-one-text,
+    .wine-item-two-text,
+    .wine-item-three-text,
+    .wine-item-four-text,
+    .wine-item-five-text,
+    .wine-item-six-text {
+        margin: 3rem;
+        padding: 1rem;
+        text-align: center;
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
     }
 
     .menu-header {
