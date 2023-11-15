@@ -56,8 +56,8 @@ img {
     grid-column: 1 / span 3;
     /* Span all 3 columns */
     display: grid;
-    /* grid-template-rows: .15fr .15fr; */
-    /* Create two rows for content */
+    height: 400px;
+
 }
 
 .footer-container {
@@ -89,6 +89,7 @@ img {
     text-align: center;
     grid-row: 1;
     grid-column: 2;
+    padding: 2rem 2rem;
 }
 
 .menu-pizza-image {
@@ -96,7 +97,7 @@ img {
     width: 100%;
     /* Set width to 100% to span the entire column */
     height: 400px;
-    /* Auto height to maintain the aspect ratio */
+    /* Auto he3ght to maintain the aspect ratio */
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
@@ -290,6 +291,8 @@ img {
     text-align: center;
     grid-row: 1;
     grid-column: 2;
+    padding: 2rem 2rem;
+
 }
 
 .contact-us-image {
@@ -309,6 +312,7 @@ img {
 .contact-us-hours,
 .contact-us-call {
     text-align: center;
+    text-decoration: underline;
 }
 
 .contact-us-location {
@@ -329,11 +333,27 @@ img {
 /* Contact Us Sub Text Lines */
 .contact-us-sub-one,
 .contact-us-sub-two,
-.contact-us-sub-three {
-    margin: 2rem;
-    padding: 2rem;
+.contact-us-sub-three,
+.contact-us-sub-four,
+.contact-us-sub-five,
+.contact-us-sub-six {
+    margin: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
+
+.contact-us-sub-one,
+.contact-us-sub-two,
+.contact-us-sub-three {
+    border-top: solid black 1px;
+}
+
+/* .contact-us-sub-four,
+.contact-us-sub-five,
+.contact-us-sub-six {
+    border-bottom: solid black 1px;
+} */
 
 .contact-us-sub-one {
     grid-row: 6;
@@ -350,11 +370,43 @@ img {
     grid-column: 3;
 }
 
+.contact-us-sub-four {
+    grid-row: 7;
+    grid-column: 1;
+}
+
+.contact-us-sub-five {
+    grid-row: 7;
+    grid-column: 2;
+}
+
+.contact-us-sub-six {
+    grid-row: 7;
+    grid-column: 3;
+
+}
+
+.google-map {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    /* height: 150%; */
+    width: 100%;
+    grid-row: 8 / span 2;
+    grid-column: 1 / span 3;
+}
+
+
 
 @media (max-width: 768px) {
     .tab-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+    }
+
+    .tab-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        /* Add any other necessary styles */
     }
 
     #content {
@@ -377,7 +429,8 @@ img {
 
     .menu-pizza-image,
     .menu-wine-image,
-    .contact-us-image {
+    .contact-us-image,
+    .google-map {
         height: auto;
         /* width: 10%; */
         /* padding-top: 0.5rem; */
@@ -405,64 +458,82 @@ img {
         border-right: 2px solid #000;
     }
 
-    .menu-header {
+    .menu-header,
+    .contact-header {
         text-align: center;
         grid-row: 1;
         grid-column: 1;
     }
 
 
-    .menu-pizza-image {
+    .menu-pizza-image,
+    .contact-us-image {
         grid-row: 2;
         grid-column: 1;
     }
 
-    .menu-item-one {
+
+    .menu-item-one,
+    .contact-us-location {
         grid-row: 3;
         grid-column: 1;
     }
 
-    .menu-item-one-text {
+    .contact-us-location {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .menu-item-one-text,
+    .contact-us-sub-one {
         grid-row: 4;
         grid-column: 1;
     }
 
-    .menu-item-two {
+    .menu-item-two,
+    .contact-us-sub-four {
         grid-row: 5;
         grid-column: 1;
     }
 
-    .menu-item-two-text {
+    .menu-item-two-text,
+    .contact-us-hours {
         grid-row: 6;
         grid-column: 1;
     }
 
-    .menu-item-three {
+    .menu-item-three,
+    .contact-us-sub-two {
         grid-row: 7;
         grid-column: 1;
     }
 
-    .menu-item-three-text {
+    .menu-item-three-text,
+    .contact-us-sub-five {
         grid-row: 8;
         grid-column: 1;
     }
 
-    .menu-item-four {
+    .menu-item-four,
+    .contact-us-call {
         grid-row: 9;
         grid-column: 1;
     }
 
-    .menu-item-four-text {
+    .menu-item-four-text,
+    .contact-us-sub-three {
         grid-row: 10;
         grid-column: 1;
     }
 
-    .menu-item-five {
+    .menu-item-five,
+    .contact-us-sub-six {
         grid-row: 11;
         grid-column: 1;
     }
 
-    .menu-item-five-text {
+    .menu-item-five-text,
+    .google-map {
         grid-row: 12;
         grid-column: 1;
     }
