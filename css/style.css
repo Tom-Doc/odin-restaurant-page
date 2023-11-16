@@ -478,30 +478,27 @@ img {
 
 
     .menu-item-one,
-    .contact-us-location {
-        grid-row: 3;
-        grid-column: 1;
-    }
-
-    .contact-us-location {
+    .contact-us-call {
+        padding-top: 2rem;
         grid-row: 3;
         grid-column: 1;
     }
 
     .menu-item-one-text,
-    .contact-us-sub-one {
+    .contact-us-sub-three {
         grid-row: 4;
         grid-column: 1;
     }
 
     .menu-item-two,
-    .contact-us-sub-four {
+    .contact-us-sub-six {
         grid-row: 5;
         grid-column: 1;
     }
 
     .menu-item-two-text,
     .contact-us-hours {
+        padding-top: 5rem;
         grid-row: 6;
         grid-column: 1;
     }
@@ -519,19 +516,20 @@ img {
     }
 
     .menu-item-four,
-    .contact-us-call {
+    .contact-us-location {
+        padding-top: 5rem;
         grid-row: 9;
         grid-column: 1;
     }
 
     .menu-item-four-text,
-    .contact-us-sub-three {
+    .contact-us-sub-one {
         grid-row: 10;
         grid-column: 1;
     }
 
     .menu-item-five,
-    .contact-us-sub-six {
+    .contact-us-sub-four {
         grid-row: 11;
         grid-column: 1;
     }
