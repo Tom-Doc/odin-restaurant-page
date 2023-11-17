@@ -73,12 +73,7 @@ img {
     /* Place it in row 3 */
     grid-column: 1 / span 3;
     /* Span all 3 columns */
-    filter: brightness(100%) contrast(100%);
-    transition: filter 0.3s ease-in-out;
-}
 
-img:hover {
-    filter: brightness(120%) contrast(120%);
 }
 
 
