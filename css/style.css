@@ -476,16 +476,21 @@ img {
     }
 
     .menu-pizza-image,
-    .menu-wine-image,
     .contact-us-image,
     .google-map {
-        height: auto;
+        height: 300px;
         /* width: 10%; */
         /* padding-top: 0.5rem; */
         /* Adjust padding as needed for spacing */
         /* padding-bottom: 0.5rem; */
         /* Adjust padding as needed for spacing */
     }
+
+    /* .menu-wine-image {
+        height: 300px;
+    } */
+
+
 
     .menu-item-one-text,
     .menu-item-two-text,
