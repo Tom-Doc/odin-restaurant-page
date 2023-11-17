@@ -1,4 +1,9 @@
+/* Roboto Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* Luxurious Script */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+/* Italiana */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Luxurious+Script&display=swap');
 
 body {
     background-color: #FFE8D6;
@@ -16,25 +21,45 @@ body {
 
 .header {
     padding-top: 1rem;
+    padding-bottom: 1rem;
     grid-column: 2 / span 1;
     grid-row: 1;
     text-align: center;
+    font-family: 'Luxurious Script';
+    font-size: 4rem;
+    color: #6B705C;
+    letter-spacing: .5rem;
 }
 
 .tab-header {
+    position: relative;
+    background-color: #B7B7A4;
+    /* Set your background color */
     padding-top: 1rem;
     padding-bottom: 1rem;
     grid-column: 1 / span 3;
     grid-row: 2;
 }
 
+
 .tab-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Create three columns for Home, Menu, and Contact */
     grid-template-rows: auto;
-    /* Create one row for tab labels */
+    font-family: 'Italiana';
+    font-size: 1.75rem;
+    font-weight: 500;
+    /* Adjust the font weight to make it bolder */
+    color: #814e31;
+    /* Adjusted color for more contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* Add a subtle text shadow */
 }
+
+.tab:hover {
+    color: #d66422;
+}
+
 
 .tab {
     text-align: center;
@@ -48,11 +73,21 @@ img {
     /* Place it in row 3 */
     grid-column: 1 / span 3;
     /* Span all 3 columns */
+    filter: brightness(100%) contrast(100%);
+    transition: filter 0.3s ease-in-out;
 }
 
-.Image {
-    border-radius: 10px;
+img:hover {
+    filter: brightness(120%) contrast(120%);
 }
+
+
+
+
+
+/* .Image {
+    border-radius: 10px;
+} */
 
 .tab-content {
     grid-row: 3 / span 1;
@@ -66,18 +101,26 @@ img {
 
 .footer-container {
     padding-top: 1rem;
+    padding-bottom: 2rem;
     grid-row: 5;
     grid-column: 1 / span 3;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    font-family: 'Italiana';
+    font-size: 1.35rem;
+    font-weight: 500;
+    /* Adjust the font weight to make it bolder */
+    color: #814e31;
+    /* Adjusted color for more contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* Add a subtle text shadow */
 }
 
 .footer-icons {
     width: 3rem;
     margin: auto;
-
 }
 
 .footer-icon-container {
