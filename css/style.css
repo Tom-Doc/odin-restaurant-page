@@ -138,6 +138,9 @@ img {
     grid-row: 1;
     grid-column: 2;
     padding: 2rem 2rem;
+    font-family: 'Luxurious Script';
+    font-size: 3rem;
+    color: #6B705C;
 }
 
 .menu-pizza-image {
@@ -165,6 +168,10 @@ img {
 .wine-item-five,
 .wine-item-six {
     text-align: center;
+    color: #6B705C;
+    font-family: 'Italiana';
+    font-size: 1.5rem;
+    font-weight: 600;
     /* text-decoration: 2px underline; */
 }
 
@@ -183,8 +190,12 @@ img {
     margin: 3rem;
     padding: 3rem;
     text-align: center;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
+    border-left: 2px solid #6B705C;
+    border-right: 2px solid #6B705C;
+    color: #814e31;
+    font-family: 'Italiana';
+    font-size: 1.25em;
+    font-weight: 600;
 }
 
 .menu-item-one {
@@ -252,6 +263,10 @@ img {
     grid-row: 7;
     grid-column: 2;
     padding-top: 10rem;
+    font-family: 'Luxurious Script';
+    font-size: 3rem;
+    color: #6B705C;
+    padding-bottom: 2rem;
 }
 
 .menu-wine-image {
@@ -507,8 +522,8 @@ img {
         margin: 3rem;
         padding: 1rem;
         text-align: center;
-        border-left: 2px solid #000;
-        border-right: 2px solid #000;
+        border-left: 2px solid #6B705C;
+        border-right: 2px solid #6B705C;
     }
 
     .menu-header,
