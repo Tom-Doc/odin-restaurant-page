@@ -40,7 +40,7 @@ function renderHomeTab() {
   // Home Page Image
   const newImage = document.createElement("img");
   newImage.src = "/src/images/PizzaBackground.jpg";
-  newImage.classList.add("Image");
+  newImage.classList.add("home-image");
 
   // Bottom Text
   const footerContent = document.createElement("div");
@@ -259,11 +259,10 @@ function renderContactTab() {
   contactHeader.classList.add("contact-header");
   tabContent.appendChild(contactHeader);
 
-  //Contact Us Images
+  // Contact Us Images
   const contactUsImage = document.createElement("img");
   contactUsImage.src = "/src/images/contact-us-images/contact-us-img.jpg";
   contactUsImage.classList.add("contact-us-image");
-  tabContent.appendChild(contactUsImage);
 
   //Contact Us Sub Headers
   const contactUsSub1 = document.createElement("div");
@@ -282,23 +281,54 @@ function renderContactTab() {
   tabContent.appendChild(contactUsSub3);
 
   //Contact Us Sub Header Text Lines
+
+  //Contact US Sub Header Top Text
   const contactUsSubText1 = document.createElement("div");
-  contactUsSubText1.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  contactUsSubText1.textContent = "123 Main Street, Suite 456";
   contactUsSubText1.classList.add("contact-us-sub-one");
   tabContent.appendChild(contactUsSubText1);
 
   const contactUsSubText2 = document.createElement("div");
-  contactUsSubText2.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  contactUsSubText2.textContent = "Sunday thru Thursday: 4pm to 9pm";
   contactUsSubText2.classList.add("contact-us-sub-two");
   tabContent.appendChild(contactUsSubText2);
 
   const contactUsSubText3 = document.createElement("div");
-  contactUsSubText3.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  contactUsSubText3.textContent = "Call: (555) 123-4567";
   contactUsSubText3.classList.add("contact-us-sub-three");
   tabContent.appendChild(contactUsSubText3);
+
+  //Contact US Sub Header Bottom Text
+  const contactUsSubText4 = document.createElement("div");
+  contactUsSubText4.textContent = "Downtown, San Francisco, CA 94101";
+  contactUsSubText4.classList.add("contact-us-sub-four");
+  tabContent.appendChild(contactUsSubText4);
+
+  const contactUsSubText5 = document.createElement("div");
+  contactUsSubText5.textContent = "Friday and Saturday: 2pm to 11pm";
+  contactUsSubText5.classList.add("contact-us-sub-five");
+  tabContent.appendChild(contactUsSubText5);
+
+  const contactUsSubText6 = document.createElement("div");
+  contactUsSubText6.textContent = "Email: info@barlynn.com";
+  contactUsSubText6.classList.add("contact-us-sub-six");
+  tabContent.appendChild(contactUsSubText6);
+
+  // const googleMap = document.createElement("map");
+  // googleMap.classList.add("google-map");
+  // tabContent.appendChild(googleMap);
+
+  const googleMap = document.createElement("iframe");
+  googleMap.classList.add("google-map");
+  // googleMap.setAttribute("frameborder", "0");
+  // googleMap.setAttribute("style", "border:0");
+  googleMap.setAttribute(
+    "src",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387305.9062111436!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d94a91f5cd%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1635583405689!5m2!1sen!2sus"
+  );
+
+  tabContent.appendChild(contactUsImage);
+  tabContent.appendChild(googleMap);
 }
 
 // Function to set up tab event listeners
