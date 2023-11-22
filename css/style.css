@@ -76,6 +76,14 @@ img {
 
 }
 
+.home-image {
+    filter: contrast(100%) brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.home-image:hover {
+    filter: contrast(150%) brightness(120%);
+}
 
 
 
@@ -353,9 +361,11 @@ img {
 .contact-header {
     text-align: center;
     grid-row: 1;
-    grid-column: 2;
-    padding: 2rem 2rem;
-
+    grid-column: 1 / span 3;
+    padding: 2rem;
+    font-family: 'Luxurious Script';
+    font-size: 3rem;
+    color: #6B705C;
 }
 
 .contact-us-image {
@@ -363,7 +373,7 @@ img {
     width: 100%;
     /* Set width to 100% to span the entire column */
     height: 400px;
-    /* Auto height to maintain the aspect ratio */
+    /* Auto he3ght to maintain the aspect ratio */
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
@@ -376,6 +386,10 @@ img {
 .contact-us-call {
     text-align: center;
     text-decoration: underline;
+    font-family: 'Luxurious Script';
+    font-size: 3rem;
+    color: #6B705C;
+    text-decoration-thickness: 2px;
 }
 
 .contact-us-location {
@@ -404,12 +418,16 @@ img {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
+    color: #814e31;
+    font-family: 'Italiana';
+    font-size: 1.25em;
+    font-weight: 600;
 }
 
 .contact-us-sub-one,
 .contact-us-sub-two,
 .contact-us-sub-three {
-    border-top: solid black 1px;
+    border-top: solid #6B705C 1px;
 }
 
 /* .contact-us-sub-four,
