@@ -49,11 +49,8 @@ body {
     font-family: 'Italiana';
     font-size: 1.75rem;
     font-weight: 500;
-    /* Adjust the font weight to make it bolder */
     color: #814e31;
-    /* Adjusted color for more contrast */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    /* Add a subtle text shadow */
 }
 
 .tab:hover {
@@ -70,9 +67,7 @@ img {
     /* Set the width to 100% to span all three columns */
     height: 100%;
     grid-row: 3 / span 1;
-    /* Place it in row 3 */
     grid-column: 1 / span 3;
-    /* Span all 3 columns */
 
 }
 
@@ -85,12 +80,6 @@ img {
     filter: contrast(150%) brightness(120%);
 }
 
-
-
-
-/* .Image {
-    border-radius: 10px;
-} */
 
 .tab-content {
     grid-row: 3 / span 1;
@@ -114,11 +103,8 @@ img {
     font-family: 'Italiana';
     font-size: 1.35rem;
     font-weight: 500;
-    /* Adjust the font weight to make it bolder */
     color: #814e31;
-    /* Adjusted color for more contrast */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    /* Add a subtle text shadow */
 }
 
 .footer-icons {
@@ -156,7 +142,6 @@ img {
     width: 100%;
     /* Set width to 100% to span the entire column */
     height: 400px;
-    /* Auto he3ght to maintain the aspect ratio */
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
@@ -180,7 +165,6 @@ img {
     font-family: 'Italiana';
     font-size: 1.5rem;
     font-weight: 600;
-    /* text-decoration: 2px underline; */
 }
 
 .menu-item-one-text,
@@ -282,7 +266,6 @@ img {
     width: 100%;
     /* Set width to 100% to span the entire column */
     height: 400px;
-    /* Auto height to maintain the aspect ratio */
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
@@ -373,7 +356,6 @@ img {
     width: 100%;
     /* Set width to 100% to span the entire column */
     height: 400px;
-    /* Auto he3ght to maintain the aspect ratio */
     object-fit: cover;
     /* Scale the image to cover the entire container */
     padding-top: 1rem;
@@ -430,12 +412,6 @@ img {
     border-top: solid #6B705C 1px;
 }
 
-/* .contact-us-sub-four,
-.contact-us-sub-five,
-.contact-us-sub-six {
-    border-bottom: solid black 1px;
-} */
-
 .contact-us-sub-one {
     grid-row: 6;
     grid-column: 1;
@@ -487,7 +463,6 @@ img {
     .tab-content {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        /* Add any other necessary styles */
     }
 
     #content {
@@ -512,18 +487,7 @@ img {
     .contact-us-image,
     .google-map {
         height: 300px;
-        /* width: 10%; */
-        /* padding-top: 0.5rem; */
-        /* Adjust padding as needed for spacing */
-        /* padding-bottom: 0.5rem; */
-        /* Adjust padding as needed for spacing */
     }
-
-    /* .menu-wine-image {
-        height: 300px;
-    } */
-
-
 
     .menu-item-one-text,
     .menu-item-two-text,
