@@ -125,7 +125,7 @@ function renderMenuTab() {
   tabContent.appendChild(menuItem5);
 
   const menuItem6 = document.createElement("div");
-  menuItem6.textContent = "Prosciutto & Pear Elegance";
+  menuItem6.textContent = "Prosciutto & Pear Elegance - $21";
   menuItem6.classList.add("menu-item-six");
   tabContent.appendChild(menuItem6);
 
