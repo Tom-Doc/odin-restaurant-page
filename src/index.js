@@ -1,4 +1,3 @@
-// Content Container
 const content = document.getElementById("content");
 
 //Website header
