@@ -42,7 +42,7 @@ function renderHomeTab() {
   newImage.src = "/src/images/PizzaBackground.jpg";
   newImage.classList.add("home-image");
 
-  // Bottom Text
+  // Footer Container
   const footerContent = document.createElement("div");
   footerContent.classList.add("footer-container");
 
@@ -280,8 +280,6 @@ function renderContactTab() {
   contactUsSub3.classList.add("contact-us-call");
   tabContent.appendChild(contactUsSub3);
 
-  //Contact Us Sub Header Text Lines
-
   //Contact US Sub Header Top Text
   const contactUsSubText1 = document.createElement("div");
   contactUsSubText1.textContent = "123 Main Street, Suite 456";
@@ -314,14 +312,8 @@ function renderContactTab() {
   contactUsSubText6.classList.add("contact-us-sub-six");
   tabContent.appendChild(contactUsSubText6);
 
-  // const googleMap = document.createElement("map");
-  // googleMap.classList.add("google-map");
-  // tabContent.appendChild(googleMap);
-
   const googleMap = document.createElement("iframe");
   googleMap.classList.add("google-map");
-  // googleMap.setAttribute("frameborder", "0");
-  // googleMap.setAttribute("style", "border:0");
   googleMap.setAttribute(
     "src",
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387305.9062111436!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d94a91f5cd%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1635583405689!5m2!1sen!2sus"
